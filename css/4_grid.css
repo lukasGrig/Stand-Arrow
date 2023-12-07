@@ -1,0 +1,163 @@
+
+.col2,.col3,.col4,.col5{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    
+}
+.border_div{
+    border: 3px dotted var(--yellow);
+}
+.mynd{
+    margin-top: 3.5em;
+}
+footer{
+    grid-template-columns: 1fr;
+}
+footer dd{
+    margin-left: 0px;
+}
+footer dt{
+    margin-top: 10px;
+}
+.vinstri_p{
+    margin-right: 0em;
+}
+.container{
+    margin: auto;
+    max-width: 355px;
+    margin-bottom: 30px;
+}/*add containers and change the max widths and add dedicated classes for better looks*/
+h1{
+    margin-top: 0.8em;
+    font-size: 230%;
+}
+h2{
+    font-size: 130%;
+}
+.headers{
+    max-width: 320px;
+}
+.radio{
+    display: block;
+}
+@media screen and (min-width: 600px) {
+    .col2,.col4{
+        grid-template-columns: 1fr 1fr;
+    }
+    .col3,.col5{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    h1{
+        font-size: 300%;
+    }
+    h2{
+        font-size: 160%
+    }
+    .vinstri_p{
+        margin-right: 0.5em;
+    }
+    .radio{
+        display: inline-block;
+    }
+    #Logo{
+        width: 100px;
+        height: 100px;
+    }
+    .footer{
+        max-width: 450px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    footer dt{
+        margin-top: 25px;
+    }
+    .container{
+        max-width: 600px;
+    }/*add containers and change the max widths and add dedicated classes for better looks*/
+
+    .content {
+        position: relative;
+        top: 0.6em;
+        right: auto;
+        flex-flow: row;
+        max-width: 1600px;
+    }
+    .content ul{
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row;
+    }
+    .content li{
+        border-bottom: 0px;
+    }
+
+    .tab label{
+        display: none;
+    }
+    .content{
+        max-height: 6px;
+    }
+    .content a{
+        flex-grow: 1;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px;
+    }
+    .content {
+        flex-flow: row;
+        max-width: 1600px;
+        margin: auto;
+    }
+    .content #link:hover{
+        background-color: silver;
+    }
+    .content ul{
+        padding: 0px;
+    }
+    .icons a:hover{
+        background-color: silver;
+    }
+}
+@media screen and (min-width: 768px) {
+    .col4{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .col5{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    footer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    footer dd{
+        margin-left: 40px;
+    }
+    h1{
+        font-size: 250%;
+    }
+    h2{
+        font-size: 150%
+    }
+    p{
+        font-size: 120%;
+    }
+    .container{
+        max-width: 768px;
+    }
+    #Logo{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    p{
+        font-size: 150%;
+    }
+    .container{
+        max-width: 960px;
+    }
+    #Logo{
+        width: 200px;
+        height: 200px;
+    }
+}

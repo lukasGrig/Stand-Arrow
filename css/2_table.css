@@ -1,0 +1,85 @@
+table{
+    background-color: rgb(219, 219, 219);
+    display: block;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+}
+tbody tr:nth-child(odd){
+    background-color: rgb(255, 255, 255);
+    padding: 9px;
+}
+tbody tr:nth-child(even){
+    background-color: rgb(200, 200, 200);
+    padding: 9px;
+}
+thead{
+    background-color: rgb(200, 200, 200);
+    padding: 9px;
+}
+.buy{
+    display: inline;
+    width: 50px;
+    height: 10px;
+    text-align: center;
+    background-color: silver;
+    border: 1px solid rgb(105, 36, 36);
+    border-radius: 3px;
+}
+.home{
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    background: transparent;
+    border: 2px solid rgb(137, 131, 131);
+    border-radius: 5px;
+    position: relative;
+    left: 2px;
+    top: 0px;
+}
+td, th{
+    border: 1px;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width:600px){
+    table tr{
+        border-bottom: 2px solid #2441ff;
+        display: block;
+    }
+    table td{
+        border-bottom: 1px solid black;
+        display: block;
+        text-align: right;
+    }
+    th, thead{
+        display: none;
+    }
+    td::before{
+        content: attr(data-label);
+        float: left;
+    }
+    td{
+        border-radius: 0%;
+    }
+
+}
+@media screen and (min-width:601px){/*Breyta Table á eftir*/
+    table{
+        max-width: 590px;
+    }
+}
+@media screen and (min-width:768px){
+    table{
+        max-width: 768px;
+    }
+}
+@media screen and (min-width:960px){
+    table{
+        max-width: 960px;
+    }
+}

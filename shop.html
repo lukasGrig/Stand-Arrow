@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,200;1,300;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Main.css">
+
+</head>
+<body class="shop_background">
+    <nav class="topnav">
+        <div class="tab">
+            <input type="checkbox" id="tab-1">
+            <label for="tab-1">&#9776;</label>
+            <div class="content">
+                <ul> 
+                    <li style="flex-grow: 1" id="link"><a href="index.html"><span class="icon-home3"></span> Home</a></li>
+                    <li style="flex-grow: 1" id="link"><a href="shop.html"><span class="icon-cart"></span> Shop</a></li>
+                    <li style="flex-grow: 1" id="link"><a href="about_us.html"><span class="icon-users"></span> About us</a></li>
+                    <li style="flex-grow: 0" class="icons">
+                        <a href="https://www.instagram.com"><span class="icon-instagram"></span></a>
+                        <a href="https://www.youtube.com"><span class="icon-youtube"></span></a>
+                        <a href="https://twitter.com"><span class="icon-twitter"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <table>
+            <caption>Shop</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Buy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Name">The stand arrow</td>
+                    <td data-label="Info">The Stand arrow can give you a unique ability called a "Stand". The Stand can be short-range, long-range, automatic or range irrelevant. If the stand doesn't naturally attract to you then you will die due to sickness</td>
+                    <td data-label="Buy"><a class="buy" href="information.html">Buy</a></td>
+                </tr>
+                <tr>
+                    <td data-label="Name">The Requiem arrow</td>
+                    <td data-label="Info">The requiem arrow is similar to a Stand arrow, but instead of getting a Stand you will unlock a new ability with your Stand. In order to do this, you need a strong enough Stand that can handle the arrow and a requiem arrow to pierce your Stand.</td>
+                    <td data-label="Buy"><a class="buy" href="information.html">Buy</a></td>
+                </tr>
+                <tr>
+                    <td data-label="Name">Stone Mask</td>
+                    <td data-label="Info">The Stone Mask is a powerful relic that when you wear the mask and blood touches the mask, it will extend multiple spikes into your head and will become a vampire after the process is finished</td>
+                    <td data-label="Buy"><a class="buy" href="information.html">Buy</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="chatbox">
+            <input type="checkbox" id="chatID">
+            <label for="chatID" class="chat_label">?</label>
+            <div class="info_box">
+                <form action="#" method="get">
+                    <h2>Chatbox</h2>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <br>
+                    <label for="comment">Comment</label>
+                    <br>
+                    <textarea name="comment" id="comment" cols="20" rows="5" placeholder="what do you want to say?" required></textarea>
+                    <br>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+        <footer class="container footer">
+            <img src="../../myndir/drawing.svg" alt="Logo" id="Logo">
+            <div class="text">
+                <dt>People:</dt>
+                    <dd>Company: Enya's shop</dd>
+                    <dd>Owner: Enya the Hag</dd>
+                    <dd>Supplier: Diavolo/Doppio</dd>
+                    <dd>Website designer: Lukas</dd>
+            </div>
+            <div class="text">
+                <dt>Links:</dt>
+                    <dd><a href="https://www.netflix.com/is/title/80179831"><span class="icon-film"></span>Watch show</a></dd>
+                    <dd><a href="https://fonts.google.com/noto/specimen/Noto+Serif?query=Noto+serif"><span class="icon-font"></span>Fonts</a></dd>                
+                    <dd><a href="https://icomoon.io"><span class="icon-accessibility"></span>Icons</a></dd>
+                    <dd><a href="https://jojo.fandom.com/wiki/Bow_and_Arrow"><span class="icon-file-text2"></span>Source</a></dd>
+            </div>
+        </footer>
+</body>
+</html>

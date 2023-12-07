@@ -1,0 +1,190 @@
+:root{--body:#987656;--footer:silver;--hover:rgb(187, 40, 187);--yellow:#ecda23;--border:1px solid;--nav_background:rgb(225, 225, 225);--nav_border_color:white;--footer_border_color:#0000ff}
+#Logo{display:inline;margin:auto;width:200px;height:200px}
+.margin_p{margin:30px}
+.background_image{width:100%;height:auto;background-image:url(../myndir/Desert2000.jpg);background-repeat:no-repeat}
+.shop_background{width:100%;height:auto;background-image:url('../myndir/San\ Giorgio\ Maggiore\ jojo.jpg');background-repeat:no-repeat}
+body{background-color:var(--body);margin-left:auto;margin-right:auto;font-family:'Noto Serif',serif}
+fieldset{background-color:#ededed}
+legend{border:solid 1px #000;padding:4px;border-radius:10px;background-color:#fff}
+h1,h2,p{text-align:center}
+.topnav{position:relative;z-index:5}
+.tab{display:inline}
+#tab-1{display:none}
+.tab label,ul{border:1px solid #cecfd5;border-radius:6px;font-size:120%}
+.tab label{position:fixed;right:7px;top:7px;color:#000;background-color:#fff}
+label{display:inline-block;padding:5px 9px}
+.content{position:fixed;display:inline;max-height:500px;top:-17em;right:5px;overflow:hidden;transition:all .4s ease-out}
+.content a{flex-grow:1;justify-content:space-around;display:block;color:#424242;text-decoration:none;text-align:center;padding:5px}
+input:checked~.content{top:30px}
+.tab input:checked~.content{display:inline}
+.content ul{background-color:#fff;display:inline-block;list-style:none;padding:8px}
+.content li{border-bottom:1px gray solid;flex-grow:1;justify-content:space-around;color:#424242;text-decoration:none;text-align:center;padding:5px}
+.icons{display:flex;font-size:x-large;flex-flow:row}
+h1{font-size:250%;margin-top:.5em}
+.transparent_background{background-color:rgba(255,255,255,.4)}
+.img{width:120%}
+footer{background-color:var(--footer);display:grid;grid-template-columns:1fr 1fr;border:var(--border);border-color:var(--footer_border_color);border-radius:15px;text-align:center}
+.text{display:inline;padding:0 0 25px 0}
+a:hover,a:visited{color:var(--hover)}
+a{color:#4949fa;text-decoration:none;margin-bottom:5px}
+a span{color:#000}
+html{scroll-behavior:smooth}
+button{border-radius:2px;background-color:var(--yellow)}
+fieldset{border-radius:20px;font-size:120%}
+.chat_label{position:fixed;color:#4343f1;bottom:10px;right:10px;width:15px;height:25px;text-align:center;font-size:1.2em;font-weight:700;background-color:#fff;border:1px solid silver;border-radius:90px}
+#comment{left:10px}
+#chatID{display:none}
+.info_box{position:fixed;right:25px;bottom:-25em;transition:1.2s ease-out;width:320px}
+.chatbox input:checked~.info_box{display:block;bottom:12px;height:350px}
+.info_box form{display:inline-block;width:auto;background-color:rgba(220,220,242,.8);padding:10px;border:1px gray solid;border-radius:10px}
+.info_box input[type=submit]{display:inline-block;border-radius:6px;background-color:#d9d5d5;padding:5px;color:#959595;text-shadow:1px .5px #535353}
+.info_box input[type=submit]:hover{background-color:#c7c7c7}
+.button,button{display:inline-block;border-radius:5px;background-color:#cdc4c4;padding:6px;margin:4px;color:#000;text-shadow:1px .2px #342f2f}
+.button:hover{background-color:gray}
+input{border-radius:4px}
+input[type=date],input[type=email],input[type=number],input[type=search],input[type=tel],input[type=text],select,textarea{margin-bottom:10px;padding:6px 10px;border-radius:4px;width:15em;box-shadow:none;box-sizing:border-box}
+.slide_text{font-size:small;margin:10px;padding:10px;border:2px;border-radius:20px}
+.Description{font-size:85%;position:relative;bottom:-81%}
+@keyframes Animation{
+0%{right:100%}
+4%{right:0}
+25%{right:0}
+30%{right:-160%}
+100%{right:-160%}
+}
+#Slide div{width:17.89em;height:13.39em;border-radius:30px}
+#Slide{height:13.5em;width:18em;margin:auto;position:relative;overflow:hidden;z-index:1}
+#Slide>*{background-color:#fff;position:absolute;right:100%;top:0;animation:16s Animation infinite ease-in-out}
+#Slide>:nth-child(1){animation-delay:0s}
+#Slide>:nth-child(2){animation-delay:4s}
+#Slide>:nth-child(3){animation-delay:8s}
+#Slide>:nth-child(4){animation-delay:12s}
+.slide_1{background-image:url('../myndir/Enya\ the\ Hag.jpg');background-repeat:no-repeat;background-size:100%}
+.slide_2{background-image:url('../myndir/San\ Giorgio\ with\ Doppio\ and\ Diavolo\ in\ it.png');background-repeat:no-repeat;background-size:100%;background-position-x:100%}
+.slide_3{background-image:url('../myndir/stand\ arrow\ heads.jpg');background-repeat:no-repeat;background-size:110%}
+.slide_4{background-image:url('../myndir/creator\ of\ stand\ arrows.webp');background-repeat:no-repeat;background-size:110%}
+@media screen and (min-width:960px){
+#Slide{height:22.5em;width:30em}
+#Slide div{width:29.89em;height:22.39em}
+.Description{font-size:140%;bottom:-81%}
+.slide_text{font-size:large}
+}
+@keyframes Splash_screen{
+0%,50%{background-color:#adadff}
+100%{background-color:#7070ff}
+}
+.splash_background{animation:Splash_screen 6s forwards}
+@keyframes ball_animation{
+0%{left:50%;z-index:10;opacity:1;width:50px;top:100%;height:75px;border-radius:90%}
+15%,20%{height:50px;top:25%;border-radius:50%}
+21%{top:26%;height:55px}
+23%{top:33%;height:65px}
+25%{top:49%;height:65px}
+26%{top:50%;height:45px}
+27%{height:35px;top:51%}
+30%{height:30px;top:52%}
+32%{height:50px;top:50%}
+36%{height:60px;top:35%}
+37%,39%{height:50px;top:35%}
+41%{height:58px;top:42%}
+46%{height:45px;top:50%}
+47%{height:34px;top:51%}
+48%{height:45px;top:50%}
+49%{height:53px;top:46%}
+53%{height:50px;top:50%}
+60%{width:50px;height:50px;top:50%;left:50%;border-radius:50%;margin-top:0;margin-left:0}
+85%{top:50%;left:50%;width:1844px;height:1844px;margin-top:-922px;margin-left:-922px}
+100%{top:50%;left:50%;width:184px;height:184px;margin-top:-92px;margin-left:-92px}
+}
+.ball{position:fixed;background-color:#00f;width:50px;height:50px;border-radius:60px;animation:ball_animation 6s;animation-timing-function:ease-out;animation-fill-mode:forwards}
+@keyframes loading_animation{
+0%{transform:rotate(0);opacity:1}
+100%{transform:rotate(360deg);opacity:1}
+}
+.loading_spinner{left:50%;top:50%;margin-top:-72px;margin-left:-72px;position:fixed;animation:loading_animation 1.8s infinite;animation-timing-function:linear;animation-delay:5s;opacity:0;font-size:900%;top:50%}
+table{background-color:#dbdbdb;display:block;border:1px #000 solid;border-radius:10px;margin-bottom:10px;margin-left:auto;margin-right:auto;max-width:450px}
+tbody tr:nth-child(odd){background-color:#fff;padding:9px}
+tbody tr:nth-child(even){background-color:#c8c8c8;padding:9px}
+thead{background-color:#c8c8c8;padding:9px}
+.buy{display:inline;width:50px;height:10px;text-align:center;background-color:silver;border:1px solid #692424;border-radius:3px}
+.home{width:60px;height:30px;text-align:center;background:0 0;border:2px solid #898383;border-radius:5px;position:relative;left:2px;top:0}
+td,th{border:1px;border-radius:5px}
+@media screen and (max-width:600px){
+table tr{border-bottom:2px solid #2441ff;display:block}
+table td{border-bottom:1px solid #000;display:block;text-align:right}
+th,thead{display:none}
+td::before{content:attr(data-label);float:left}
+td{border-radius:0}
+}
+@media screen and (min-width:601px){
+table{max-width:590px}
+}
+@media screen and (min-width:768px){
+table{max-width:768px}
+}
+@media screen and (min-width:960px){
+table{max-width:960px}
+}
+@font-face{font-family:icomoon;src:url(fonts/icomoon.eot?75cx7p);src:url(fonts/icomoon.eot?75cx7p#iefix) format('embedded-opentype'),url(fonts/icomoon.ttf?75cx7p) format('truetype'),url(fonts/icomoon.woff?75cx7p) format('woff'),url(fonts/icomoon.svg?75cx7p#icomoon) format('svg');font-weight:400;font-style:normal;font-display:block}
+[class*=" icon-"],[class^=icon-]{font-family:icomoon!important;speak:never;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.icon-home3:before{content:"\e902"}
+.icon-film:before{content:"\e913"}
+.icon-file-text2:before{content:"\e926"}
+.icon-cart:before{content:"\e93a"}
+.icon-users:before{content:"\e972"}
+.icon-spinner3:before{content:"\e97c"}
+.icon-accessibility:before{content:"\e9b2"}
+.icon-font:before{content:"\ea5c"}
+.icon-instagram:before{content:"\ea92"}
+.icon-twitter:before{content:"\ea96"}
+.icon-youtube:before{content:"\ea9d"}
+.col2,.col3,.col4,.col5{display:grid;grid-template-columns:1fr;gap:1em}
+.border_div{border:3px dotted var(--yellow)}
+.mynd{margin-top:3.5em}
+footer{grid-template-columns:1fr}
+footer dd{margin-left:0}
+footer dt{margin-top:10px}
+.vinstri_p{margin-right:0}
+.container{margin:auto;max-width:355px;margin-bottom:30px}
+h1{margin-top:.8em;font-size:230%}
+h2{font-size:130%}
+.headers{max-width:320px}
+.radio{display:block}
+@media screen and (min-width:600px){
+.col2,.col4{grid-template-columns:1fr 1fr}
+.col3,.col5{grid-template-columns:1fr 1fr 1fr}
+h1{font-size:300%}
+h2{font-size:160%}
+.vinstri_p{margin-right:.5em}
+.radio{display:inline-block}
+#Logo{width:100px;height:100px}
+.footer{max-width:450px;grid-template-columns:1fr 1fr 1fr}
+footer dt{margin-top:25px}
+.container{max-width:600px}
+.content{position:relative;top:.6em;right:auto;flex-flow:row;max-width:1600px}
+.content ul{display:flex;justify-content:space-around;flex-flow:row}
+.content li{border-bottom:0}
+.tab label{display:none}
+.content{max-height:6px}
+.content a{flex-grow:1;text-decoration:none;text-align:center;padding:5px}
+.content{flex-flow:row;max-width:1600px;margin:auto}
+.content #link:hover{background-color:silver}
+.content ul{padding:0}
+.icons a:hover{background-color:silver}
+}
+@media screen and (min-width:768px){
+.col4{grid-template-columns:1fr 1fr 1fr 1fr}
+.col5{grid-template-columns:1fr 1fr 1fr 1fr 1fr}
+footer{grid-template-columns:1fr 1fr 1fr}
+footer dd{margin-left:40px}
+h1{font-size:250%}
+h2{font-size:150%}
+p{font-size:120%}
+.container{max-width:768px}
+#Logo{width:150px;height:150px}
+}
+@media screen and (min-width:960px){
+p{font-size:150%}
+.container{max-width:960px}
+#Logo{width:200px;height:200px}
+}

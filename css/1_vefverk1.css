@@ -1,0 +1,568 @@
+:root{ 
+    --body: #987656;
+    --footer: silver;
+    --hover: rgb(187, 40, 187);
+    --yellow: #ecda23;
+    --border: 1px solid;
+    --nav_background: rgb(225, 225, 225);
+    --nav_border_color: white;
+    --footer_border_color: #0000ff;
+}
+#Logo{
+    display: inline;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+.margin_p{
+    margin: 30px;
+}
+
+.background_image{
+    width: 100%;
+    height: auto;
+    background-image: url(../../myndir/Desert2000.jpg);
+    background-repeat: no-repeat;
+}
+.shop_background{
+    width: 100%;
+    height: auto;
+    background-image: url(../../myndir/San\ Giorgio\ Maggiore\ jojo.jpg);
+    background-repeat: no-repeat;
+}
+
+body{
+    background-color: var(--body);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Noto Serif', serif;
+}
+fieldset{
+    background-color: rgb(237, 237, 237);
+}
+legend{
+    border: solid 1px black;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+h1,h2,p{
+    text-align: center;
+}
+/*-----------------------------------------------------------*/
+.topnav{
+    position: relative;
+    z-index: 5;
+}
+.tab{
+    display: inline;
+}
+#tab-1 {
+    display: none;
+}
+.tab label,
+ul {
+  border: 1px solid #cecfd5;
+  border-radius: 6px;
+  font-size: 120%;
+}
+.tab label{
+    position: fixed;
+    right: 7px;
+    top: 7px;
+    color: black;
+    background-color: white;
+}
+label{
+    display: inline-block;
+    padding: 5px 9px;
+}
+.content {
+    position: fixed;
+    display: inline;
+    max-height: 500px;
+    top: -17em;
+    right: 5px;
+    overflow: hidden;
+    transition: all .4s ease-out;
+}
+.content a{
+    flex-grow: 1;
+    justify-content: space-around;
+    display: block;
+    color: rgb(66, 66, 66);
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+}
+input:checked ~ .content {
+    top: 30px;
+}
+.tab input:checked ~ .content{
+    display: inline;
+}
+.content ul{
+    background-color: white;
+    display: inline-block;
+    list-style: none;
+    padding: 8px;
+}
+.content li{
+    border-bottom: 1px gray solid;
+    flex-grow: 1;
+    justify-content: space-around;
+    color: rgb(66, 66, 66);
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+}
+.icons{
+    display: flex;
+    font-size: x-large;
+    flex-flow: row;
+}
+
+h1{
+    font-size: 250%;
+    margin-top: 0.5em;
+}
+.transparent_background{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.img{
+    width: 120%;
+}
+footer{
+    background-color: var(--footer);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: var(--border);
+    border-color: var(--footer_border_color);
+    border-radius: 15px;
+    text-align: center;
+}
+.text{
+    display: inline;
+    padding: 0px 0px 25px 0px;
+}
+a:hover, a:visited{
+    color: var(--hover);
+}
+a{
+    color: rgb(73, 73, 250);
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+a span{
+    color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+button{
+    border-radius: 2px;
+    background-color: var(--yellow);
+}
+fieldset{
+    border-radius: 20px;
+    font-size: 120%;
+} 
+.chat_label{
+    position: fixed;
+    color: rgb(67, 67, 241);
+    bottom: 10px;
+    right: 10px;
+    width: 15px;
+    height: 25px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 90px;
+}
+#comment{
+    left: 10px;
+}
+#chatID{
+    display: none;
+}
+.info_box{
+    position: fixed;
+    right: 25px;
+    bottom: -25em;
+    transition: 1.2s ease-out;
+    width: 320px;
+}
+.chatbox input:checked ~ .info_box {
+    display: block;
+    bottom: 12px;
+    height: 350px;
+}
+.info_box form{
+    display: inline-block;
+    width: auto;
+    background-color: rgba(220, 220, 242, 0.8);
+    padding: 10px;
+    border: 1px gray solid;
+    border-radius: 10px;
+}
+.info_box input[type="submit"]{
+    display: inline-block;
+    border-radius: 6px;
+    background-color: rgb(217, 213, 213);
+    padding: 5px;
+    color: #959595;
+    text-shadow: 1px 0.5px rgb(83, 83, 83);
+}
+.info_box input[type="submit"]:hover{
+    background-color: rgb(199, 199, 199);
+}
+
+button, .button{
+    display: inline-block;
+    border-radius: 5px;
+    background-color: rgb(205, 196, 196);
+    padding: 6px;/*Bæta meira á eftir með kennara*/
+    margin: 4px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 0.2px rgb(52, 47, 47);
+}
+.button:hover{
+    background-color: gray;
+}
+input{
+    border-radius: 4px;
+}
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+textarea,
+select,
+input[type="number"],
+input[type="date"] {
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    width: 15em;
+    box-shadow: none;
+    box-sizing: border-box; 
+}
+
+.slide_text{
+    font-size: small;
+    margin: 10px;
+    padding: 10px;
+    border: 2px;
+    border-radius: 20px;
+}
+.Description {
+    font-size: 85%;
+    position: relative;
+    bottom: -81%;
+}
+@keyframes Animation {
+    0% {right: 100%}
+    4% {right: 0%}
+    25% {right: 0%}
+    30% {right: -160%}
+    100% {right: -160%}
+}
+#Slide div{
+    width: 17.89em;
+    height: 13.39em;
+    border-radius: 30px;
+}
+#Slide {
+    height: 13.5em; 
+    width: 18em;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+#Slide > * {/*Everything inside slide*/
+    background-color: rgb(255, 255, 255);
+    position: absolute; 
+    right: 100%; 
+    top: 0;
+    animation: 16s Animation infinite ease-in-out
+}
+#Slide > *:nth-child(1) {animation-delay: 0s}
+#Slide > *:nth-child(2) {animation-delay: 4s}
+#Slide > *:nth-child(3) {animation-delay: 8s}
+#Slide > *:nth-child(4) {animation-delay: 12s}
+/*gotta change the image itself*/
+
+.slide_1{
+    background-image: url(../../myndir/Enya\ the\ Hag.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.slide_2{
+    background-image: url(../../myndir/San\ Giorgio\ with\ Doppio\ and\ Diavolo\ in\ it.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: 100%;
+}
+
+.slide_3{
+    background-image: url(../../myndir/stand\ arrow\ heads.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+}
+.slide_4{
+    background-image: url(../../myndir/creator\ of\ stand\ arrows.webp);
+    background-repeat: no-repeat;
+    background-size: 110%;
+}
+
+@media screen and (min-width: 600px) {
+
+}
+@media screen and (min-width: 960px) {
+    #Slide {
+        height: 22.5em; 
+        width: 30em;
+    }
+    #Slide div{
+        width: 29.89em;
+        height: 22.39em;
+    }
+    .Description {
+        font-size: 140%;
+        bottom: -81%;
+    }
+    .slide_text{
+        font-size: large;
+    }
+}
+
+/*Splash Screen*/
+
+
+
+@keyframes Splash_screen{
+    0%,50%{
+        background-color: rgb(173, 173, 255)
+    }
+    100%{
+        background-color: #7070ff;
+    }
+}
+
+.splash_background{
+    animation: Splash_screen 6s forwards;
+}
+
+@keyframes ball_animation{
+    0%{
+        left: 50%;
+        z-index: 10;
+        opacity: 1;
+        width: 50px;
+        top: 100%;
+        height: 75px;
+        border-radius: 90%;
+    }
+    15%,20%{
+        height: 50px;
+        top: 25%;
+        border-radius: 50%;
+    }
+    21%{
+        top: 26%;
+        height: 55px;
+    }
+    23%{
+        top: 33%;
+        height: 65px;
+    }
+    25%{
+        top: 49%;
+        height: 65px;
+    }
+    26%{
+        top: 50%;
+        height: 45px;
+    }
+    27%{
+        height: 35px;
+        top: 51%;
+    }
+    30%{
+        height: 30px;
+        top: 52%;
+    }
+    32%{
+        height: 50px;
+        top: 50%;
+    }
+    36%{
+      height: 60px;
+      top: 35%;  
+    }
+    37%,39%{
+        height: 50px;
+        top: 35%;
+    }
+    41%{
+        height: 58px;
+        top: 42%;
+    }
+    46%{
+        height: 45px;
+        top: 50%;
+    }
+    47%{
+        height: 34px;
+        top: 51%;
+    }
+    48%{
+        height: 45px;
+        top: 50%;
+    }
+    49%{
+        height: 53px;
+        top: 46%;
+    }
+    53%{
+        height: 50px;
+        top: 50%;
+    }
+    60%{
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    85%{
+        top: 50%;
+        left: 50%;
+        width: 1844px;
+        height: 1844px;
+        margin-top: -922px;
+        margin-left: -922px;
+    }
+    100%{
+        top: 50%;
+        left: 50%;
+        width: 184px;
+        height: 184px;
+        margin-top: -92px;
+        margin-left: -92px;
+    }
+    /*
+    start of the glitch effect
+    for skip time effect but didnt work
+
+    26%,30%{
+        height: 40px;
+        top: 52%;
+    }
+    31%,55%{
+        height: 55px;
+        top: 40%;
+    }
+    56%,75%{
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    76%,81%{
+        top: 50%;
+        left: 50%;
+        width: 184px;
+        height: 184px;
+        margin-top: -92px;
+        margin-left: -92px;
+    }
+    82%,99%{
+        width: 498px;
+        height: 498px;
+        margin-top: -249px;
+        margin-left: -249px;
+        border-radius: 210px;
+        left: 50%;
+        top: 50%;
+    }
+    100%{
+        width: 785px;
+        height: 785px;
+        margin-top: -392.5px;
+        margin-left: -392.5px;
+        border-radius: 390px;
+        left: 50%;
+        top: 50%;
+    }
+    */
+
+    /*80%{
+        opacity: 1;
+    }
+    100%{
+        top: 50%;
+        opacity: 0;
+        left: 50%;
+    }*/
+}
+
+.ball{
+    position: fixed;
+    background-color: #0000ff;
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    animation: ball_animation 6s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loading_animation{
+    0%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+.loading_spinner{
+    left: 50%;
+    top: 50%;
+    margin-top: -72px;
+    margin-left: -72px;
+    position: fixed;
+    animation: loading_animation 1.8s infinite;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+    opacity: 0;
+    font-size: 900%;
+    top: 50%;
+}
+/*
+.transition_from_splash{
+    position: fixed;
+    background-color: #0000ff;
+    width: 2000px;
+    height: 2000px;
+    left: 50%;
+    top: 50%;
+    margin-top: -1000px;
+    margin-left: -1000px;
+    transition: all 2s linear;
+}
+.transition_from_splash:hover{
+    width: 0px;
+    height: 0px;
+}*/
